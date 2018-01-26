@@ -1,0 +1,9 @@
+.icon{
+  display: inline-block;
+  font-size: 128px;
+  color: black;
+}
+
+.icon:hover{
+  color:red;
+}
