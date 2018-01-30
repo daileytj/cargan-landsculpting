@@ -1,9 +1,373 @@
-.icon{
-  display: inline-block;
-  font-size: 128px;
-  color: black;
+/* --------------------------------------------------------------- */
+/*                           CSS Reset                             */
+/* --------------------------------------------------------------- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.icon:hover{
-  color:red;
+/* --------------------------------------------------------------- */
+/*                           General                               */
+/* --------------------------------------------------------------- */
+*{
+	box-sizing: border-box;
 }
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 2.2em;
+}
+
+
+/* --------------------------------------------------------------- */
+/*                           Header                                */
+/* --------------------------------------------------------------- */
+header{
+	width:100%;
+}
+
+nav{
+	width: 100%;
+	height: 120px;
+	box-shadow: 3px 3px 3px #1c1c1e;
+	position:fixed;
+	z-index: 2;
+	background-color: #ffffff;
+}
+
+nav img{
+	height: 120px;
+	width: auto;
+	padding: 15px 5px 15px 5px;
+}
+
+nav ul{
+	float:right;
+	padding-right: 20px;
+}
+
+nav ul, nav ul>li{
+	display: inline-block;
+}
+
+nav li {
+    line-height: 105px;
+    padding: 15px 10px;
+    font-size: 1.2em;
+}
+
+nav a{
+	text-decoration: none;
+	color: #1c1c1e;
+}
+
+nav a:hover{
+	color:#fc451e;
+}
+
+
+/* --------------------------------------------------------------- */
+/*                            Hero                                 */
+/* --------------------------------------------------------------- */
+.hero{
+	padding-top: 120px;
+  height                : 700px;
+  background-image      : url("./images/hero-img.jpg");
+  background-repeat     : no-repeat;
+  background-attachment : fixed;
+  background-position   : center;
+  background-size       : cover;
+}
+
+.hero-text{
+	display:block;
+	width:60%;
+	margin: 175px auto 0 auto;
+	height: auto;
+	padding: 30px;
+	background-color: rgba(26, 9, 4, 0.75);
+	text-align: center;
+}
+
+.hero-text h2{
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.hero-text a{
+	text-decoration: none;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.5em;
+	letter-spacing: 3px;
+}
+
+.hero-text a:hover{
+	color: #fc451e;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/*                            About                                */
+/* --------------------------------------------------------------- */
+
+#about{
+	margin-top: 20px;
+	background-color: #ffffff;
+	width: 100%;
+	padding: 20px;
+}
+
+.about-wrapper{
+	width: 80%;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.about-wrapper p{
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-top: 20px;
+	color: #1c1c1e;
+}
+
+.certifications{
+	width:50%;
+	margin: 30px auto;
+}
+
+.certifications img{
+	width:50%;
+	padding:10px;
+}
+
+
+/* --------------------------------------------------------------- */
+/*                           Services                              */
+/* --------------------------------------------------------------- */
+
+#services{
+	width: 100%;
+	background-color: #fc451e;
+	text-align: center;
+}
+
+.services-wrapper{
+	padding: 40px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.services-wrapper h2{
+	margin-bottom: 40px;
+	color:#ffffff;
+}
+
+.services-wrapper p{
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin: 20px 0;
+	color: #ffffff;
+}
+
+.services-display-container{
+	display:table;
+	border-spacing: 10px;
+}
+
+.service{
+	display:table-cell;
+	width:31%;
+	background-color: #ffffff;
+	margin: 20px 5px;
+	padding:10px;
+	border-radius: 10px;
+
+}
+
+.service p{
+	color: #1c1c1e;
+}
+
+.service p:first-of-type{
+	color:#fc451e;
+	border-bottom: 2px solid #fc541e;
+	padding-bottom: 10px;
+}
+
+.other-services{
+	margin-top: 10px;
+}
+
+
+/* --------------------------------------------------------------- */
+/*                           Photos                                */
+/* --------------------------------------------------------------- */
+
+#slider {
+	margin: 80px auto -50px auto;
+	width: 960px;
+	overflow: hidden;
+}
+
+#slider-wrapper {
+	width: 9999px;
+	height: 400px;
+	position: relative;
+	transition: left 400ms linear;
+}
+
+.slide {
+	float: left;
+	width: 960px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.caption {
+	margin: 0;
+	position: absolute;
+	z-index: 100;
+	bottom: -2em;
+	left: 0;
+	width: 100%;
+	height: 2em;
+	line-height: 2;
+	text-align: center;
+	background: rgba( 0, 0, 0, 0.6 );
+	color: #fff;
+	transition: bottom 500ms ease-in;
+}
+.caption.visible {
+	bottom: 0;
+}
+
+#slider-nav {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#slider-nav a {
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	line-height: 2;
+	font-size: 5em;
+	margin-right: 0.5em;
+}
+
+#slider-nav a.current {
+	color: #fc451e;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/*                           Footer                                */
+/* --------------------------------------------------------------- */
+footer{
+	width: 100%;
+	background-color: #1c1c1e;
+	text-align: center;
+}
+
+footer a, footer p, footer h3{
+	text-decoration: none;
+	color: #999fa4;
+	margin-top:10px;
+}
+
+footer h3{
+	padding:20px;
+}
+
+footer a:hover, footer i:hover{
+	color: #fc451e;
+}
+
+.rooted{
+	font-size: 1.4em;
+	color: #fc451e;
+}
+
+.icon-wrapper{
+	width:100%;
+	margin: 0 auto;
+}
+
+.icon{
+	display:inline-block;
+	font-size: 2em;
+	padding: 5px;
+}
+
+.copy{
+	padding: 10px 0 20px 0;
+  border-top: 2px solid #999fa4;
+  margin: 30px auto 0 auto;
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+/*                       Media Queries                             */
+/* --------------------------------------------------------------- */
