@@ -2,7 +2,8 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navItems = Array.from(document.querySelectorAll(".nav-menu a"));
 
-function toggleNav(){
+function toggleNav(e){
+  event.stopPropogation();
   if(navMenu.classList.contains('nav-active')){
     navMenu.classList.remove('nav-active');
   }
@@ -12,7 +13,8 @@ function toggleNav(){
   }
 }
 
-function removeNavActive(){
+function removeNavActive(e){
+  event.stopPropogation();
   navMenu.classList.remove('nav-active');
 }
 

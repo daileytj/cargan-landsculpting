@@ -71,7 +71,7 @@ a{
 	text-decoration: none !important;
 }
 
-#aboutLinkLocation, #servicesLinkLocation{
+#aboutLinkLocation, #servicesLinkLocation, #photosLinkLocation{
 	transform: translateY(-120px);
 }
 
