@@ -371,9 +371,9 @@ footer a:hover, footer i:hover{
 		transform: translateX(0px);
 	}
 
-	/* .hero{
+	.hero{
 		background-attachment: scroll !important;
-	} */
+	}
 
 	.service{
 		display:block;
