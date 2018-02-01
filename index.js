@@ -21,3 +21,11 @@ navItems.forEach(item => {
 })
 
 hamburger.addEventListener('click', toggleNav);
+
+
+//disable parralax
+var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+if (ismobile){
+ const hero = document.querySelector('.hero');
+ hero.classList.remove('parallax');
+}

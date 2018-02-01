@@ -135,9 +135,13 @@ nav a:hover{
   height                : 700px;
   background-image      : url("./images/hero-img.jpg");
   background-repeat     : no-repeat;
-  background-attachment : fixed;
+  background-attachment : scroll;
   background-position   : center;
   background-size       : cover;
+}
+
+.parallax{
+	background-attachment: fixed;
 }
 
 .hero-text{
@@ -367,9 +371,9 @@ footer a:hover, footer i:hover{
 		transform: translateX(0px);
 	}
 
-	.hero{
+	/* .hero{
 		background-attachment: scroll !important;
-	}
+	} */
 
 	.service{
 		display:block;
