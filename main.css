@@ -206,7 +206,7 @@ nav a:hover{
 }
 
 .family-photo {
-    width: 70%;
+    width: 50%;
     margin: 40px auto 20px auto;
     border: 10px solid #fc451e;
     box-shadow: 8px 8px 8px #4c4c4c;
@@ -396,6 +396,10 @@ footer a:hover, footer i:hover{
 
 	.hero{
 		background-attachment: scroll !important;
+	}
+
+	.family-photo{
+		width:70%;
 	}
 
 	.service{
