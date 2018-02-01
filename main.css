@@ -346,6 +346,7 @@ footer a:hover, footer i:hover{
 		float: right;
     height: 80px;
     margin-top: 20px;
+		cursor:pointer;
 	}
 
 	nav ul, nav ul>li {
@@ -355,6 +356,7 @@ footer a:hover, footer i:hover{
     line-height: 15px;
     background-color: #fc451e;
 		padding-right:0px;
+		cursor:pointer;
 	}
 
 	.nav-menu {
