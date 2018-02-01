@@ -71,6 +71,10 @@ a{
 	text-decoration: none !important;
 }
 
+#aboutLinkLocation, #servicesLinkLocation{
+	transform: translateY(-120px);
+}
+
 
 /* --------------------------------------------------------------- */
 /*                           Header                                */
@@ -377,6 +381,10 @@ footer a:hover, footer i:hover{
 @media only screen and (max-width: 600px){
 	body{
 		font-size: 14px;
+	}
+
+	#aboutLinkLocation, #servicesLinkLocation{
+		transform: translateY(-80px);
 	}
 
 	nav, nav img{

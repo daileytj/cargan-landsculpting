@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const navItems = Array.from(document.querySelectorAll(".nav-menu a"));
 
 function toggleNav(){
   if(navMenu.classList.contains('nav-active')){
@@ -7,7 +8,16 @@ function toggleNav(){
   }
   else{
     navMenu.classList.add('nav-active');
+
   }
 }
+
+function removeNavActive(){
+  navMenu.classList.remove('nav-active');
+}
+
+navItems.forEach(item => {
+  item.addEventListener('click', removeNavActive);
+})
 
 hamburger.addEventListener('click', toggleNav);
