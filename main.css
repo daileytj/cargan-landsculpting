@@ -102,6 +102,14 @@ nav img{
 	display:none;
 }
 
+.hamburger-link{
+	display:none;
+}
+
+.nav-menu{
+	float:right;
+}
+
 nav ul{
 	float:right;
 	padding-right: 20px;
@@ -342,6 +350,7 @@ footer a:hover, footer i:hover{
 	}
 
 	.hamburger-link{
+		display:inline-block;
 		float:right;
 	}
 
