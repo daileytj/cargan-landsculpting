@@ -205,6 +205,14 @@ nav a:hover{
 	color: #1c1c1e;
 }
 
+.family-photo {
+    width: 70%;
+    margin: 40px auto 20px auto;
+    border: 10px solid #fc451e;
+    box-shadow: 8px 8px 8px #4c4c4c;
+    transform: rotate(-3deg);
+}
+
 .certifications{
 	width:80%;
 	margin: 30px auto;
