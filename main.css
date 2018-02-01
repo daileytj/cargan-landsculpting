@@ -94,6 +94,10 @@ nav img{
 	padding: 15px 5px 15px 5px;
 }
 
+.hamburger{
+	display:none;
+}
+
 nav ul{
 	float:right;
 	padding-right: 20px;
@@ -318,8 +322,85 @@ footer a:hover, footer i:hover{
 }
 
 
-
-
 /* --------------------------------------------------------------- */
 /*                       Media Queries                             */
 /* --------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 780px){
+
+	body{
+		font-size: 18px;
+	}
+
+	.hamburger{
+		display:inline-block;
+		float: right;
+    height: 80px;
+    margin-top: 20px;
+	}
+
+	nav ul, nav ul>li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    background-color: #fc451e;
+		padding-right:0px;
+	}
+
+	.nav-menu {
+    transform: translateX(800px);
+		transition-duration: 1s;
+		transition-timing-function: ease;
+}
+
+	.nav-menu a:hover{
+		color:#ffffff;
+	}
+
+	.nav-active{
+		transform: translateX(0px);
+	}
+
+	.hero{
+		background-attachment: scroll !important;
+	}
+
+	.service{
+		display:block;
+		width: 80%;
+		margin: 10px auto;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	body{
+		font-size: 14px;
+	}
+
+	nav, nav img{
+		height: 80px;
+	}
+
+	.hamburger{
+		margin-top: 0;
+	}
+
+	.hero-text{
+		width:90%;
+	}
+
+	.certifications img:first-of-type {
+    margin-right: 0;
+	}
+	.certifications img {
+    width: 45%;
+    padding: 10px;
+	}
+
+	.service, .about-wrapper{
+		width: 90%;
+	}
+
+}
