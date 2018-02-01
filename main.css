@@ -67,6 +67,10 @@ h2{
 	font-size: 2.2em;
 }
 
+a{
+	text-decoration: none !important;
+}
+
 
 /* --------------------------------------------------------------- */
 /*                           Header                                */
@@ -182,12 +186,16 @@ nav a:hover{
 }
 
 .certifications{
-	width:50%;
+	width:80%;
 	margin: 30px auto;
 }
 
+.certifications img:first-of-type{
+	margin-right:30px;
+}
+
 .certifications img{
-	width:50%;
+	width:160px;
 	padding:10px;
 }
 
@@ -253,73 +261,15 @@ nav a:hover{
 /* --------------------------------------------------------------- */
 /*                           Photos                                */
 /* --------------------------------------------------------------- */
-
-#slider {
-	margin: 80px auto -50px auto;
-	width: 960px;
-	overflow: hidden;
+#photos{
+	margin-top: -20px;
 }
 
-#slider-wrapper {
-	width: 9999px;
-	height: 400px;
-	position: relative;
-	transition: left 400ms linear;
-}
-
-.slide {
-	float: left;
-	width: 960px;
-	height: 400px;
-	position: relative;
-	overflow: hidden;
-}
-
-.slide img {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.caption {
-	margin: 0;
-	position: absolute;
-	z-index: 100;
-	bottom: -2em;
-	left: 0;
-	width: 100%;
-	height: 2em;
-	line-height: 2;
-	text-align: center;
-	background: rgba( 0, 0, 0, 0.6 );
-	color: #fff;
-	transition: bottom 500ms ease-in;
-}
-.caption.visible {
-	bottom: 0;
-}
-
-#slider-nav {
-	margin: 1em 0;
-	text-align: center;
-}
-
-#slider-nav a {
-	text-align: center;
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-	line-height: 2;
-	font-size: 5em;
-	margin-right: 0.5em;
-}
-
-#slider-nav a.current {
-	color: #fc451e;
-}
-
-
-
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
 /* --------------------------------------------------------------- */
 /*                           Footer                                */
 /* --------------------------------------------------------------- */
@@ -327,6 +277,7 @@ footer{
 	width: 100%;
 	background-color: #1c1c1e;
 	text-align: center;
+	margin-top: -30px;
 }
 
 footer a, footer p, footer h3{
@@ -335,8 +286,8 @@ footer a, footer p, footer h3{
 	margin-top:10px;
 }
 
-footer h3{
-	padding:20px;
+footer h3 {
+  padding: 20px;
 }
 
 footer a:hover, footer i:hover{
@@ -346,6 +297,7 @@ footer a:hover, footer i:hover{
 .rooted{
 	font-size: 1.4em;
 	color: #fc451e;
+	padding: 60px 20px 20px 20px;
 }
 
 .icon-wrapper{
