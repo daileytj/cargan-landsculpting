@@ -125,7 +125,7 @@ nav li {
     font-size: 1.2em;
 }
 
-nav a{
+nav a, nav a:visited{
 	text-decoration: none;
 	color: #1c1c1e;
 }
@@ -167,7 +167,7 @@ nav a:hover{
 	margin-bottom: 20px;
 }
 
-.hero-text a{
+.hero-text a, .hero-text a:visited{
 	text-decoration: none;
 	color:#ffffff;
 	font-family: 'Montserrat', sans-serif;
@@ -268,7 +268,6 @@ nav a:hover{
 	margin: 20px 5px;
 	padding:10px;
 	border-radius: 10px;
-
 }
 
 .service p{
@@ -279,6 +278,13 @@ nav a:hover{
 	color:#fc451e;
 	border-bottom: 2px solid #fc541e;
 	padding-bottom: 10px;
+}
+
+.hardscape {
+    margin: 0 auto;
+    display: block;
+    width: 97.5%;
+		box-shadow: -3px -3px 5px #FFC107, 3px 3px 5px #FFC107;
 }
 
 .other-services{
@@ -308,7 +314,7 @@ footer{
 	margin-top: -30px;
 }
 
-footer a, footer p, footer h3{
+footer a, footer p, footer h3, footer a:visited{
 	text-decoration: none;
 	color: #999fa4;
 	margin-top:10px;
@@ -345,6 +351,10 @@ footer a:hover, footer i:hover{
   margin: 30px auto 0 auto;
 }
 
+.copy br{
+	display:none;
+}
+
 
 /* --------------------------------------------------------------- */
 /*                       Media Queries                             */
@@ -357,6 +367,10 @@ footer a:hover, footer i:hover{
 		font-size: 18px;
 	}
 
+	#aboutLinkLocation, #servicesLinkLocation, #photosLinkLocation{
+		transform: translateY(-90px);
+	}
+
 	.hamburger-link{
 		display:inline-block;
 		float:right;
@@ -366,8 +380,16 @@ footer a:hover, footer i:hover{
 		display:inline-block;
 		float: right;
     height: 80px;
-    margin-top: 20px;
+    margin-top: 10px;
 		cursor:pointer;
+	}
+
+	nav, nav img{
+		height:90px;
+	}
+
+	nav img{
+		padding: 10px 5px;
 	}
 
 	nav ul, nav ul>li {
@@ -402,10 +424,18 @@ footer a:hover, footer i:hover{
 		width:70%;
 	}
 
-	.service{
+	.service, .hardscape{
 		display:block;
 		width: 80%;
 		margin: 10px auto;
+		box-shadow:none;
+	}
+
+	.hardscape{
+		width: 77.5% !important;
+		margin: 10px auto -10px auto !important;
+	}
+
 	}
 }
 
@@ -415,15 +445,20 @@ footer a:hover, footer i:hover{
 	}
 
 	#aboutLinkLocation, #servicesLinkLocation, #photosLinkLocation{
-		transform: translateY(-80px);
+		transform: translateY(-60px);
 	}
 
 	nav, nav img{
-		height: 80px;
+		height: 60px;
+	}
+
+	nav img{
+		padding: 5px;
 	}
 
 	.hamburger{
 		margin-top: 0;
+		height: 60px;
 	}
 
 	.hero-text{
@@ -446,4 +481,15 @@ footer a:hover, footer i:hover{
 		width: 90%;
 	}
 
+	.hardscape{
+		width: 87.5% !important;
+	}
+
+	.copy span{
+		display:none;
+	}
+
+	.copy br{
+		display: block;
+	}
 }
